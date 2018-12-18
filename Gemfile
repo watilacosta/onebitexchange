@@ -58,7 +58,20 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+# Debug
+gem 'pry-rails', :group => :development
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Testes
 gem 'rspec-rails', '~> 3.5'
+
+# Chamadas Rest
+gem 'rest-client'
+
+# faz um fake de chamada web
+gem 'webmock'
+
+# Helper html
+gem "haml-rails", "~> 1.0"
