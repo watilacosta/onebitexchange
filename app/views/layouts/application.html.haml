@@ -9,5 +9,10 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = favicon_link_tag '/favicon.png'
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-  %body
+  %body.py-4
+    %nav.navbar.navbar-light.bg-transparent.p-3.mb-5.rounded.fixed-top
+      .container
+        %a.navbar-brand.text-light{:href => "#"}
+          = image_tag '/logo.png', class: 'img d-inline-block align-top', height: "30"
+          OneBitExchange
     = yield
